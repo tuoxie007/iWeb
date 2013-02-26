@@ -40,7 +40,6 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     int w = size.width;
     int h = size.height;
     
-    UIImage *img = image;
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGContextRef context = CGBitmapContextCreate(NULL, w, h, 8, 4 * w, colorSpace, kCGImageAlphaPremultipliedFirst);
     CGRect rect = CGRectMake(0, 0, w, h);
@@ -49,7 +48,7 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     addRoundedRectToPath(context, rect, radius, radius);
     CGContextClosePath(context);
     CGContextClip(context);
-    CGContextDrawImage(context, CGRectMake(0, 0, w, h), img.CGImage);
+    CGContextDrawImage(context, CGRectMake(0, 0, w, h), image.CGImage);
     CGImageRef imageMasked = CGBitmapContextCreateImage(context);
     CGContextRelease(context);
     CGColorSpaceRelease(colorSpace);

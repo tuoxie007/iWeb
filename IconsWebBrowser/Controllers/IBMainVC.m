@@ -150,7 +150,6 @@ CGRect deleteFrame() {
         _searchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
         _searchBar.delegate = self;
         [self.view addSubview:_searchBar];
-        [self initIcons];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(siteIconAdded:) name:@"SiteIconAdded" object:nil];
     }
     mainVC = self;
@@ -161,12 +160,15 @@ CGRect deleteFrame() {
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
+    
     [self cancelSearch];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+    [self initIcons];
+    
+    // For a bug: do not show new icon on the desktop after added
+    UIView *v = [UIView new];
+    [self.view addSubview:v];
+    [v removeFromSuperview];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -507,7 +509,6 @@ CGRect deleteFrame() {
     }
     NSDictionary *site = [siteInfo object];
     [IBIconHandler addNewSite:site];
-    [self initIcons];
     
     for (NSInteger i=0; i<siteOuterViews.count; i++) {
         [[siteOuterViews objectAtIndex:i] setTag:i];

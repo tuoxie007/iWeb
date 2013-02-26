@@ -55,7 +55,6 @@
 		BF9F9B761521BBE60085DE8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF9F9B741521BBE60085DE8E /* InfoPlist.strings */; };
 		BF9F9B781521BBE60085DE8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F9B771521BBE60085DE8E /* main.m */; };
 		BF9F9B7C1521BBE60085DE8E /* IBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F9B7B1521BBE60085DE8E /* IBAppDelegate.m */; };
-		BF9F9B9F1521BD2A0085DE8E /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9F9B9E1521BD2A0085DE8E /* TestView.xib */; };
 		BF9F9BA21521BDBC0085DE8E /* IBMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F9BA11521BDBC0085DE8E /* IBMainVC.m */; };
 		BF9F9BA81521C4EE0085DE8E /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F9BA71521C4EE0085DE8E /* Helper.m */; };
 		BF9F9BAF1521C5C40085DE8E /* IBIconHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F9BAE1521C5C40085DE8E /* IBIconHandler.m */; };
@@ -146,7 +145,6 @@
 		BF9F9B791521BBE60085DE8E /* iWeb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iWeb-Prefix.pch"; sourceTree = "<group>"; };
 		BF9F9B7A1521BBE60085DE8E /* IBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBAppDelegate.h; sourceTree = "<group>"; };
 		BF9F9B7B1521BBE60085DE8E /* IBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBAppDelegate.m; sourceTree = "<group>"; };
-		BF9F9B9E1521BD2A0085DE8E /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = Views/TestView.xib; sourceTree = "<group>"; };
 		BF9F9BA01521BDBC0085DE8E /* IBMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IBMainVC.h; path = Controllers/IBMainVC.h; sourceTree = "<group>"; };
 		BF9F9BA11521BDBC0085DE8E /* IBMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IBMainVC.m; path = Controllers/IBMainVC.m; sourceTree = "<group>"; };
 		BF9F9BA61521C4EE0085DE8E /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Helper.h; path = Commen/Helper.h; sourceTree = "<group>"; };
@@ -331,7 +329,6 @@
 		BF9F9B9D1521BCDE0085DE8E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BF9F9B9E1521BD2A0085DE8E /* TestView.xib */,
 				BFAC46EC158A4A0400A02F83 /* IBSiteIconButton.h */,
 				BFAC46ED158A4A0400A02F83 /* IBSiteIconButton.m */,
 				BFAC46F0158A4AEE00A02F83 /* IBDesktopScrollView.h */,
@@ -489,7 +486,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9F9B761521BBE60085DE8E /* InfoPlist.strings in Resources */,
-				BF9F9B9F1521BD2A0085DE8E /* TestView.xib in Resources */,
 				BF9F9BB11521CDBC0085DE8E /* DefaultSites.plist in Resources */,
 				BF9F9BB51521D0020085DE8E /* icon-site-google.png in Resources */,
 				BF9F9BBB1521DA810085DE8E /* icon-site-apple.png in Resources */,
