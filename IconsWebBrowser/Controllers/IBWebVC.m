@@ -291,7 +291,7 @@ UIScrollView *getScrollViewInWebView(UIWebView *webView)
             [_webView.layer renderInContext:UIGraphicsGetCurrentContext()];
             UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
-            UIImageWriteToSavedPhotosAlbum(viewImage, nil, nil, nil);
+//            UIImageWriteToSavedPhotosAlbum(viewImage, nil, nil, nil);
             favVc = [[IBFavVC alloc] initWithTitle:title forURL:url withIconURL:nil withScreenshot:viewImage];
         }
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:favVc];
